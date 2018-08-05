@@ -1,0 +1,20 @@
+{
+    "name": "explicitcontent/datetime",
+    "type": "library",
+    "require": {
+        "php": "^7.1",
+        "explicitcontent/assertion": "dev-master"
+    },
+    "autoload": {
+        "psr-4": { "ExplicitContent\\DateTime\\": ["src"] }
+    },
+    "autoload-dev": {
+        "psr-4": { "ExplicitContent\\DateTime\\": ["tests"] }
+    },
+    "repositories": [
+        {
+            "type": "github",
+            "url":  "git@github.com:explicitcontent/assertion.git"
+        }
+    ]
+}
