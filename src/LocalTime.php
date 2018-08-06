@@ -59,6 +59,11 @@ final class LocalTime
         return $this->secondOfDay;
     }
 
+    public function toHis(): string
+    {
+        return sprintf('%02d:%02d:%02d', intval($this->secondOfDay / 3600), intval(($this->secondOfDay % 3600) / 60), $this->secondOfDay % 60);
+    }
+
     public function shift(Duration $duration): self
     {
         return self::fromSeconds($this->secondOfDay + $duration->toSeconds());

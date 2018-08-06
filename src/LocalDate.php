@@ -118,7 +118,7 @@ final class LocalDate
         return $this->modify(sprintf('-%d years', $years));
     }
 
-    public function toString(): string
+    public function toYmd(): string
     {
         return $this->date;
     }
